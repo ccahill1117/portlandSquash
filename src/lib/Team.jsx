@@ -14,19 +14,19 @@ function Team(props){
     <div style={teamStyle}>
       <ul>
         <li>
-          <h4>#1 - {props.player1}</h4>
+          <h4>#1 - {props.player1.firstName}</h4>
         </li>
         <li>
-          <h4>#2 - {props.player2}</h4>
+          <h4>#2 - {props.player2.firstName}</h4>
         </li>
         <li>
-          <h4>#3 - {props.player3}</h4>
+          <h4>#3 - {props.player3.firstName}</h4>
         </li>
         <li>
-          <h4>#4 - {props.player4}</h4>
+          <h4>#4 - {props.player4.firstName}</h4>
         </li>
         <li>
-          <h4>#5 - {props.player5}</h4>
+          <h4>#5 - {props.player5.firstName}</h4>
         </li>
       </ul>
     </div>
