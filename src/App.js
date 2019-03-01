@@ -9,6 +9,9 @@ import UserRegistration from './lib/UserRegistration';
 import Landing from './lib/Landing';
 import Scores from './lib/Scores';
 import Profile from './lib/Profile';
+import matchComponent from './lib/matchComponent';
+import Team from './lib/Team';
+
 import { Security, ImplicitCallback } from '@okta/okta-react';
 import { withAuth } from '@okta/okta-react';
 

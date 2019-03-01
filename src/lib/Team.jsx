@@ -1,9 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
+import PropTypes from 'prop-types';
 
 
-function Team(){
+function Team(props){
 
     var teamStyle = {
 
@@ -11,11 +12,23 @@ function Team(){
 
   return(
     <div style={teamStyle}>
-      <ol>
+      <ul>
         <li>
-          <h4>#1 - {props.}</h4>
+          <h4>#1 - {props.player1}</h4>
         </li>
-      </ol>
+        <li>
+          <h4>#2 - {props.player2}</h4>
+        </li>
+        <li>
+          <h4>#3 - {props.player3}</h4>
+        </li>
+        <li>
+          <h4>#4 - {props.player4}</h4>
+        </li>
+        <li>
+          <h4>#5 - {props.player5}</h4>
+        </li>
+      </ul>
     </div>
   )
 }
