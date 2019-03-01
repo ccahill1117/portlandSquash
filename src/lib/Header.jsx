@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
+import './styles/HeaderStyles.css';
 
 
 function Header(){
@@ -11,10 +12,10 @@ function Header(){
       justifyContent: 'center',
     }
 
-    var linkStyle = {
-      textDecoration: 'none',
-      color: 'black',
-    }
+    // var linkStyle = {
+    //   textDecoration: 'none',
+    //   color: 'black',
+    // }
 
     var linkDivStyle = {
       borderStyle: 'solid',
@@ -29,23 +30,23 @@ function Header(){
     <div style={headStyle}>
 
       <div style={linkDivStyle}>
-        <Link style={linkStyle} to="/">Home</Link>
+        <Link class="link" to="/">Home</Link>
       </div>
 
       <div style={linkDivStyle}>
-        <Link style={linkStyle} to="/scores">Enter Scores</Link>
+        <Link class="link" to="/scores">Enter Scores</Link>
       </div>
 
       <div style={linkDivStyle}>
-        <Link style={linkStyle} to="/userReg">New User</Link>
+        <Link class="link" to="/userReg">New User</Link>
       </div>
 
       <div style={linkDivStyle}>
-        <Link style={linkStyle} to="/profile">test profile...</Link>
+        <Link class="link" to="/profile">test profile...</Link>
       </div>
 
       <div style={linkDivStyle}>
-        <Link style={linkStyle} to="/smigel">Smigel / Yusem Award</Link>
+        <Link class="link" to="/smigel">Smigel / Yusem Award</Link>
       </div>
 
     </div>
