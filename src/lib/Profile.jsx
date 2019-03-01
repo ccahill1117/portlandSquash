@@ -25,7 +25,9 @@ class Profile extends React.Component {
     }
     return (
       <div style={scoresStyle}>
-        <h2>Profile</h2>
+        <Typography component="h3" variant="h4" gutterBottom>
+          Profile Name
+        </Typography>
       </div>
     );
   }
