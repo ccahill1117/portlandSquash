@@ -25,6 +25,10 @@ Portland City Squash League Web Application 2.0
 ### Is there anything else you'd like your instructor to know?
 I want my MVP to, at the least, be a decent replacement for the very outdated [www.portlandsquash.org](http://www.portlandsquash.org). My goal for this project is to provide a way for league members to create a user profile, be assigned to teams by the league,
 
+### Draft Component hierarchy
+
+<img src="./public/images/componentHierarchy/componentHierarchy.001.jpeg">
+
 
 
 
