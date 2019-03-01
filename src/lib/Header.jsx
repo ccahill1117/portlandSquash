@@ -7,7 +7,7 @@ function Header(){
 
     var headStyle = {
       display: 'grid',
-      gridTemplateColumns: 'repeat(auto-fit, 100px)',
+      gridTemplateColumns: 'repeat(auto-fit, 125px)',
       justifyContent: 'center',
     }
 
@@ -16,20 +16,38 @@ function Header(){
       color: 'black',
     }
 
+    var linkDivStyle = {
+      borderStyle: 'solid',
+      borderWidth: '1px',
+      borderColor: 'tomato',
+      margin: '5px',
+      padding: '10px',
+      justifyContent: 'center',
+    }
+
   return(
     <div style={headStyle}>
-      <div>
+
+      <div style={linkDivStyle}>
         <Link style={linkStyle} to="/">Home</Link>
       </div>
-      <div>
+
+      <div style={linkDivStyle}>
         <Link style={linkStyle} to="/scores">Enter Scores</Link>
       </div>
-      <div>
+
+      <div style={linkDivStyle}>
         <Link style={linkStyle} to="/userReg">New User</Link>
       </div>
-      <div>
+
+      <div style={linkDivStyle}>
         <Link style={linkStyle} to="/profile">test profile...</Link>
       </div>
+
+      <div style={linkDivStyle}>
+        <Link style={linkStyle} to="/smigel">Smigel / Yusem Award</Link>
+      </div>
+
     </div>
   )
 

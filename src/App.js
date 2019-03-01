@@ -11,6 +11,8 @@ import Scores from './lib/Scores';
 import Profile from './lib/Profile';
 import matchComponent from './lib/matchComponent';
 import Team from './lib/Team';
+import Legal from './lib/Legal';
+import SmigelYusem from './lib/SmigelYusem';
 
 import { Security, ImplicitCallback } from '@okta/okta-react';
 import { withAuth } from '@okta/okta-react';
@@ -40,6 +42,8 @@ class App extends Component {
                 <Route exact path='/scores' component={Scores} />
                 <Route exact path='/userReg' component={UserRegistration} />
                 <Route exact path='/profile' component={Profile} />
+                <Route exact path='/smigel' component={SmigelYusem} />
+
 
 
                 <Route component={Error404} />
