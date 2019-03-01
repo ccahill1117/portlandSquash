@@ -9,6 +9,14 @@ import UserRegistration from './lib/UserRegistration';
 import Landing from './lib/Landing';
 import Scores from './lib/Scores';
 import Profile from './lib/Profile';
+import { Security, ImplicitCallback } from '@okta/okta-react';
+import { withAuth } from '@okta/okta-react';
+
+const config = {
+  issuer: 'https://dev-816756.okta.com/oauth2/default',
+  redirect_uri: window.location.origin + '/implicit/callback',
+  client_id: '{0oabr696vWGka8xg6356}'
+}
 
 
 

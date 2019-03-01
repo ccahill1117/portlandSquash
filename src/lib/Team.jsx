@@ -11,20 +11,22 @@ function Team(){
 
   return(
     <div style={teamStyle}>
-      <div>
-        <Link to="/">Home</Link>
-      </div>
-      <div>
-        <Link to="/scores">Enter Scores</Link>
-      </div>
-      <div>
-        <Link to="/userReg">New User</Link>
-      </div>
-      <div>
-        <Link to="/profile">test profile...</Link>
-      </div>
+      <ol>
+        <li>
+          <h4>#1 - {props.}</h4>
+        </li>
+      </ol>
     </div>
   )
+}
+
+Team.propTypes = {
+  teamName: PropTypes.string,
+  player1: PropTypes.object,
+  player2: PropTypes.object,
+  player3: PropTypes.object,
+  player4: PropTypes.object,
+  player5: PropTypes.object,
 
 }
 
