@@ -1,5 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import Typography from '@material-ui/core/Typography';
+
 
 function Header(){
 
@@ -19,6 +21,9 @@ function Header(){
       </div>
       <div>
         <Link to="/userReg">New User</Link>
+      </div>
+      <div>
+        <Link to="/profile">test profile...</Link>
       </div>
     </div>
   )

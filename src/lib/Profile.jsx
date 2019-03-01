@@ -3,13 +3,12 @@ import { Link } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 
 
-class Scores extends React.Component {
+class Profile extends React.Component {
 
 
   constructor(props) {
     super(props);
     this.state = {
-
     };
     // this.handleTroubleshootingConfirmation = this.handleTroubleshootingConfirmation.bind(this);
   }
@@ -17,7 +16,6 @@ class Scores extends React.Component {
   // handleTroubleshootingConfirmation(){
   //   this.setState({formVisibleOnPage: true});
   // }
-
   render(){
 
     var scoresStyle = {
@@ -27,16 +25,14 @@ class Scores extends React.Component {
     }
     return (
       <div style={scoresStyle}>
-        <Typography component="h3" variant="h4" gutterBottom>
-          Scores
-        </Typography>
+        <h2>Profile</h2>
       </div>
     );
   }
 }
 
-Scores.propTypes = {
+Profile.propTypes = {
 
 };
 
-export default Scores;
+export default Profile;

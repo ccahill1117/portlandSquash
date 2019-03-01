@@ -8,6 +8,7 @@ import Error404 from './lib/Error404';
 import UserRegistration from './lib/UserRegistration';
 import Landing from './lib/Landing';
 import Scores from './lib/Scores';
+import Profile from './lib/Profile';
 
 
 
@@ -23,6 +24,8 @@ class App extends Component {
                 <Route exact path='/' component={Landing} />
                 <Route exact path='/scores' component={Scores} />
                 <Route exact path='/userReg' component={UserRegistration} />
+                <Route exact path='/profile' component={Profile} />
+
 
                 <Route component={Error404} />
               </Switch>
