@@ -7,6 +7,7 @@ import Header from './lib/Header';
 import Error404 from './lib/Error404';
 import UserLogin from './lib/UserLogin';
 import Landing from './lib/Landing';
+import Scores from './lib/Scores';
 
 
 
@@ -21,6 +22,9 @@ class App extends Component {
           <p>this is app</p>
             <Switch>
                   <Route exact path='/' component={Landing} />
+                  <Route exact path='/scores' component={Scores} />
+                  <Route exact path='/userLogin' component={UserLogin} />
+
                   <Route component={Error404} />
                 </Switch>
 
