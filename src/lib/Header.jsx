@@ -11,19 +11,24 @@ function Header(){
       justifyContent: 'center',
     }
 
+    var linkStyle = {
+      textDecoration: 'none',
+      color: 'black',
+    }
+
   return(
     <div style={headStyle}>
       <div>
-        <Link to="/">Home</Link>
+        <Link style={linkStyle} to="/">Home</Link>
       </div>
       <div>
-        <Link to="/scores">Enter Scores</Link>
+        <Link style={linkStyle} to="/scores">Enter Scores</Link>
       </div>
       <div>
-        <Link to="/userReg">New User</Link>
+        <Link style={linkStyle} to="/userReg">New User</Link>
       </div>
       <div>
-        <Link to="/profile">test profile...</Link>
+        <Link style={linkStyle} to="/profile">test profile...</Link>
       </div>
     </div>
   )

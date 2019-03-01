@@ -21,6 +21,10 @@ const config = {
   client_id: '{0oabr696vWGka8xg6356}'
 }
 
+var appStyle = {
+  padding: '20px',
+  margin: '20px',
+}
 
 
 class App extends Component {
@@ -29,7 +33,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="App">
+      <div style={appStyle} className="App">
         <Header />
           <Switch>
                 <Route exact path='/' component={Landing} />
