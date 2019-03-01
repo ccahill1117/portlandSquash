@@ -12,10 +12,13 @@ function Header(){
   return(
     <div style={headStyle}>
       <div>
+        <Link to="/">Home</Link>
+      </div>
+      <div>
         <Link to="/scores">Enter Scores</Link>
       </div>
       <div>
-        <Link to="/userLogin">userLogin</Link>
+        <Link to="/userReg">New User</Link>
       </div>
     </div>
   )

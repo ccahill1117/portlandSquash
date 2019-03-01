@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 
 class Scores extends React.Component {
 
+
   constructor(props) {
     super(props);
     this.state = {
@@ -17,9 +18,14 @@ class Scores extends React.Component {
 
   render(){
 
+    var scoresStyle = {
+      borderStyle : 'solid',
+      margin: '10px',
+      padding: '10px',
+    }
     return (
-      <div>
-        <p>enter scores</p>
+      <div style={scoresStyle}>
+        <h2>enter scores</h2>
       </div>
     );
   }

@@ -3,11 +3,17 @@ import { Link } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 
-function UserLogin(){
+function UserRegistration(){
+  var registrationStyle = {
+    borderStyle : 'solid',
+    margin: '10px',
+    padding: '10px',
+  }
+
   return (
-    <div>
+    <div style={registrationStyle}>
       <Typography component="h3" variant="h4" gutterBottom>
-        Register Below
+        Enter New User Registration
       </Typography>
       <form>
         <input
@@ -23,4 +29,4 @@ function UserLogin(){
 
 }
 
-export default UserLogin;
+export default UserRegistration;
