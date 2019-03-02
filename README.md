@@ -42,6 +42,10 @@ I want my MVP to, at the least, be a decent replacement for the very outdated [w
 
 <img src="./public/images/scheduleDetail.jpg">
 
+#### Enter Scores Detail
+
+<img src="./public/images/enterScores.jpg">
+
 
 
 
