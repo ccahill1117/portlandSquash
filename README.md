@@ -29,10 +29,14 @@ I want my MVP to, at the least, be a decent replacement for the very outdated [w
 <img src="./public/images/componentHierarchy/componentHierarchy.001.jpeg">
 
 ### Draft Visual Representations
-#### Landing Page
-<img src="./public/images/landingPage.jpg">
-#### Landing Page (when new season registration open)
 
+#### Landing Page
+
+<img src="./public/images/landingPage.jpg">
+
+#### Landing Page (when new season registration open) and new user registration
+
+<img src="./public/images/landingPage_userReg.jpg">
 
 
 
