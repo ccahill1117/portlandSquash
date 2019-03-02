@@ -28,6 +28,9 @@ I want my MVP to, at the least, be a decent replacement for the very outdated [w
 ### Draft Component hierarchy
 <img src="./public/images/componentHierarchy/componentHierarchy.001.jpeg">
 
+### State Summary
+<img src="./public/images/componentHierarchy/componentHierarchy.002.jpeg">
+
 ### Draft Visual Representations
 
 #### Landing Page
