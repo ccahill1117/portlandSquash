@@ -38,6 +38,11 @@ I want my MVP to, at the least, be a decent replacement for the very outdated [w
 
 <img src="./public/images/landingPage_userReg.jpg">
 
+#### Schedule and Schedule Detail
+
+<img src="./public/images/scheduleDetail.jpg">
+
+
 
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
