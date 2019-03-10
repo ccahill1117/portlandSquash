@@ -16,7 +16,7 @@ export default class UserSignIn extends React.Component{
       clientId: '[0oabr696vWGka8xg6356]',
       redirectUri: 'http://localhost:8080/implicit/callback',
       authParams: {
-        responseType: 'id_token'
+      responseType: 'id_token'
       }
     });
     this.showLogin = this.showLogin.bind(this);

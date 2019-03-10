@@ -1,25 +1,31 @@
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Home from './lib/Home';
+
+import { Route } from 'react-router-dom';
+import { SecureRoute, ImplicitCallback } from '@okta/okta-react';
+
+import Navigation from './lib/shared/Navigation';
+import HomePage from './lib/home/HomePage';
+import RegistrationForm from './lib/auth/RegistrationForm';
+import config from './app.config';
+import LoginPage from './lib/auth/LoginPage';
+import ProfilePage from './lib/auth/ProfilePage';
 
 class App extends Component {
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <Navigation />
+        <main>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/login" render={() => <LoginPage baseUrl={config.url} />} />
+          <Route path="/implicit/callback" component={ImplicitCallback} />
+          <Route path="/register" component={RegistrationForm} />
+          <SecureRoute path="/profile" component={ProfilePage} />
+        </main>
+
       </div>
     );
   }
