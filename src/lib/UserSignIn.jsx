@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { Switch, Route } from 'react-router-dom';
 import Typography from '@material-ui/core/Typography';
 
+
 function UserSignIn(){
   var signInStyle = {
     borderStyle : 'solid',
@@ -10,19 +11,38 @@ function UserSignIn(){
     padding: '10px',
   }
 
+  var OktaSignIn = require('@okta/okta-signin-widget');
+
+  var signIn = new OktaSignIn(
+    {
+      baseUrl: 'https://{https://dev-816756.okta.com}',
+      el: '#osw-container'
+    }
+  );
+
+  signIn.showSignInToGetTokens({
+    clientId: '{{0oabr696vWGka8xg6356}}',
+    redirectUri: '{{http://localhost:8080/implicit/callback}}',
+
+    // Return an access token from the authorization server
+    getAccessToken: true,
+
+    // Return an ID token from the authorization server
+    getIdToken: true,
+
+    scope: 'openid profile',
+
+  });
+
+
+
   return (
     <div style={signInStyle}>
-      <Typography component="h3" variant="h4" gutterBottom>
-        Enter New User Registration
-      </Typography>
-      <form>
-        <input
-          type='text'
-          id='firstName'
-          placeholder='First Name'
-          />
 
-      </form>
+      <div id="osw-container">
+
+      </div>
+
 
     </div>
   )

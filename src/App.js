@@ -19,14 +19,6 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Security, ImplicitCallback } from '@okta/okta-react';
 import { withAuth } from '@okta/okta-react';
 
-var OktaSignIn = require('@okta/okta-signin-widget');
-
-var signIn = new OktaSignIn(
-  {
-    baseUrl: 'https://{https://dev-816756.okta.com}'
-  }
-);
-
 const config = {
   issuer: 'https://dev-816756.okta.com/oauth2/default',
   redirect_uri: window.location.origin + '/implicit/callback',
@@ -60,6 +52,7 @@ class App extends Component {
               </Switch>
 
         <Footer />
+        <UserSignIn />
       </div>
     );
   }
