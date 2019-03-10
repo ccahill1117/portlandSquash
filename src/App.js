@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom';
+import fetch from 'isomorphic-fetch';
+import { Switch } from 'react-router-dom';
 import logo from './logo.svg';
 import './App.css';
 import Footer from './lib/Footer';
@@ -13,6 +14,7 @@ import matchComponent from './lib/matchComponent';
 import Team from './lib/Team';
 import Legal from './lib/Legal';
 import SmigelYusem from './lib/SmigelYusem';
+import { BrowserRouter as Router, Route } from 'react-router-dom';
 
 import { Security, ImplicitCallback } from '@okta/okta-react';
 import { withAuth } from '@okta/okta-react';
@@ -30,6 +32,21 @@ var appStyle = {
 
 
 class App extends Component {
+
+//   render() {
+//   return (
+//     <Router>
+//       <Security issuer={config.issuer}
+//                 client_id={config.client_id}
+//                 redirect_uri={config.redirect_uri}
+//       >
+//         <Route path='/' exact={true} component={Landing}/>
+//         <Route path='/implicit/callback' component={Landing}/>
+//       </Security>
+//     </Router>
+//   );
+// }
+
 
 
 
