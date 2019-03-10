@@ -22,3 +22,6 @@ npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
 src/constants/firebaseConfig.js
+
+MembershipSample/api/node_modules
+MembershipSample/client/node_modules
