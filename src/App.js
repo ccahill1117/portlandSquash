@@ -14,10 +14,18 @@ import matchComponent from './lib/matchComponent';
 import Team from './lib/Team';
 import Legal from './lib/Legal';
 import SmigelYusem from './lib/SmigelYusem';
+import UserSignIn from './lib/UserSignIn';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 import { Security, ImplicitCallback } from '@okta/okta-react';
 import { withAuth } from '@okta/okta-react';
+
+var OktaSignIn = require('@okta/okta-signin-widget');
+
+var signIn = new OktaSignIn(
+  {
+    baseUrl: 'https://{https://dev-816756.okta.com}'
+  }
+);
 
 const config = {
   issuer: 'https://dev-816756.okta.com/oauth2/default',
@@ -33,19 +41,7 @@ var appStyle = {
 
 class App extends Component {
 
-//   render() {
-//   return (
-//     <Router>
-//       <Security issuer={config.issuer}
-//                 client_id={config.client_id}
-//                 redirect_uri={config.redirect_uri}
-//       >
-//         <Route path='/' exact={true} component={Landing}/>
-//         <Route path='/implicit/callback' component={Landing}/>
-//       </Security>
-//     </Router>
-//   );
-// }
+
 
   render() {
     return (
