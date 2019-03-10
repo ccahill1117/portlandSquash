@@ -8,6 +8,7 @@
     "@material-ui/icons": "^3.0.2",
     "@okta/okta-react": "^1.2.0",
     "@okta/okta-signin-widget": "^2.17.0",
+    "backbone": "^1.4.0",
     "body-parser": "^1.18.3",
     "cors": "^2.8.5",
     "express": "^4.16.4",
