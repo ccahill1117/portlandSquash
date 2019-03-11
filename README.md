@@ -25,9 +25,9 @@ This project is meant to be a replacement web application for [www.portlandsquas
 * Arrange a challenge match (i.e. to challenge a player on your team to take their spot) - admin notification, etc.
 
 ### What additional tools, frameworks, libraries, APIs or other resources will these additional features require?
-* Node JS + Okta for SignIn
 * Ruby on Rails for back end scoring
-* React front end 
+* ActiveAdmin and Devise
+* React front end
 
 
 ### Draft Component hierarchy
@@ -54,12 +54,9 @@ This project is meant to be a replacement web application for [www.portlandsquas
 
 <img src="./public/images/enterScores.jpg">
 
+#### Matches Table (for backend)
 
-
-
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
-
-
+<img src="./public/images/matches_table.jpg">
 
 
 
