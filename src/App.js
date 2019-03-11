@@ -18,6 +18,7 @@ import UserSignIn from './lib/UserSignIn';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
 import { Security, ImplicitCallback } from '@okta/okta-react';
 import { withAuth } from '@okta/okta-react';
+import ScoresForm from './lib/ScoresForm';
 
 const config = {
   issuer: 'https://dev-816756.okta.com/oauth2/default',
@@ -41,7 +42,7 @@ class App extends Component {
         <Header />
           <Switch>
                 <Route exact path='/' component={Landing} />
-                <Route exact path='/scores' component={Scores} />
+                <Route exact path='/scores' component={ScoresForm} />
                 <Route exact path='/userReg' component={UserRegistration} />
                 <Route exact path='/profile' component={Profile} />
                 <Route exact path='/smigel' component={SmigelYusem} />
@@ -52,7 +53,7 @@ class App extends Component {
               </Switch>
 
         <Footer />
-  
+
       </div>
     );
   }
