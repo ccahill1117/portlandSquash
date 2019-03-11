@@ -8,12 +8,16 @@ import thunkMiddleware from 'redux-thunk';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
 import rootReducer from './reducers';
+import Firebase, { FirebaseContext } from './lib/Firebase';
 
 ReactDOM.render(
 
-  <HashRouter>
-    <App/>
-  </HashRouter>,
+
+  <FirebaseContext.Provider value={new Firebase()}>
+    <HashRouter>
+      <App/>
+    </HashRouter>
+  </FirebaseContext.Provider>,
 
 document.getElementById('root'));
 
