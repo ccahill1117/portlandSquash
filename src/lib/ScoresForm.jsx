@@ -26,15 +26,16 @@ class ScoresForm extends React.Component {
       padding: '10px',
     }
 
-    var scoreRowStyle = {
-      margin: '3px',
-      padding: '3px',
-    }
-
     var inputStyle = {
       width: '35px',
       fontSize: '20px',
 
+    }
+    var scoresContainer = {
+      justifyContent: 'center',
+      display: "grid",
+      gridTemplateColumns: "50px 50px 50px 50px 50px 50px",
+      gridTemplateRows: "50px 50px",
     }
 
     return (
@@ -43,25 +44,45 @@ class ScoresForm extends React.Component {
           Scores Form
         </Typography>
 
-        <div style={scoreRowStyle}>
-          <div>
-            Player 1
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-          </div>
-        </div>
-        <div style={scoreRowStyle}>
-          <div>
-            Player 2
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-            <input maxLength="2" style={inputStyle}></input>
-          </div>
+        <div style={scoresContainer}>
+
+            <div>
+              Player 1
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+
+            <div>
+              Player 2
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
+            <div>
+              <input maxLength="2" style={inputStyle}></input>
+            </div>
         </div>
 
       </div>
