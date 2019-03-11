@@ -23,5 +23,9 @@
 /public/assets
 .byebug_history
 
+client/node_modules
+client/src/constants/
+
+
 # Ignore master key for decrypting credentials and more.
 /config/master.key
