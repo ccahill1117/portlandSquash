@@ -1,6 +1,12 @@
 Rails.application.routes.draw do
-  devise_for :users
+  # resources :ingredients
+  # resources :drinks
+  # devise_for :users
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
-  resources :quotes
+  # resources :quotes
+
+  scope '/api' do
+    resources :drinks
+  end
 end
