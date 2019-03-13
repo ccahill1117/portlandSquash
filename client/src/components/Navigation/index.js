@@ -29,6 +29,9 @@ const NavigationAuth = ({ authUser }) => (
       <Link to={ROUTES.PLAYERS}>Players</Link>
     </li>
     <li>
+      <Link to={ROUTES.TEAMS}>Teams</Link>
+    </li>
+    <li>
       <Link to={ROUTES.HOME}>Home</Link>
     </li>
     <li>

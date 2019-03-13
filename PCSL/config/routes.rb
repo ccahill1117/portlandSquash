@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  resources :players
+  resources :players, :teams
   devise_for :admin_users, ActiveAdmin::Devise.config
   ActiveAdmin.routes(self)
 

@@ -8,3 +8,4 @@ export const ADMIN = '/admin';
 export const ADMIN_DETAILS = '/admin/:id';
 export const SMIGEL = '/smigel';
 export const PLAYERS = '/players';
+export const TEAMS = '/teams';

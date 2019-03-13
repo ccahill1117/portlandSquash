@@ -11,6 +11,7 @@ import AccountPage from '../Account';
 import AdminPage from '../Admin';
 import Smigel from '../SmigelYusem';
 import Players from '../Players';
+import Teams from '../Teams';
 
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
@@ -34,6 +35,8 @@ const App = () => (
       <Route path={ROUTES.ADMIN} component={AdminPage} />
       <Route path={ROUTES.SMIGEL} component={Smigel} />
       <Route path={ROUTES.PLAYERS} component={Players} />
+      <Route path={ROUTES.TEAMS} component={Teams} />
+
 
     </div>
   </Router>
