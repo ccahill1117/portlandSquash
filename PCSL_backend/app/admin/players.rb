@@ -1,6 +1,5 @@
-ActiveAdmin.register Drink do
-
-    permit_params :title, :description, :steps, :source
+ActiveAdmin.register Player do
+  permit_params :id, :first_name, :last_name, :dob, :read_legal, :current_position, :current_division, :phone_no, :address, :email, :created_at, :updated_at
 # See permitted parameters documentation:
 # https://github.com/activeadmin/activeadmin/blob/master/docs/2-resource-customization.md#setting-up-strong-parameters
 #
@@ -13,7 +12,5 @@ ActiveAdmin.register Drink do
 #   permitted << :other if params[:action] == 'create' && current_user.admin?
 #   permitted
 # end
-
-  
 
 end

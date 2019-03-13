@@ -1,4 +1,7 @@
 Rails.application.routes.draw do
+
+  resources :teams
+  resources :players
   # resources :ingredients
   # resources :drinks
   # devise_for :users
@@ -8,5 +11,6 @@ Rails.application.routes.draw do
 
   scope '/api' do
     resources :drinks
+    resources :players
   end
 end

@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Team name:</strong>
+  <%= @team.team_name %>
+</p>
+
+<p>
+  <strong>Team division:</strong>
+  <%= @team.team_division %>
+</p>
+
+<p>
+  <strong>Player id 1:</strong>
+  <%= @team.player_id_1 %>
+</p>
+
+<p>
+  <strong>Player id 2:</strong>
+  <%= @team.player_id_2 %>
+</p>
+
+<p>
+  <strong>Player id 3:</strong>
+  <%= @team.player_id_3 %>
+</p>
+
+<p>
+  <strong>Player id 4:</strong>
+  <%= @team.player_id_4 %>
+</p>
+
+<p>
+  <strong>Player id 5:</strong>
+  <%= @team.player_id_5 %>
+</p>
+
+<%= link_to 'Edit', edit_team_path(@team) %> |
+<%= link_to 'Back', teams_path %>

@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_03_11_225900) do
+ActiveRecord::Schema.define(version: 2019_03_12_233802) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
@@ -58,9 +58,36 @@ ActiveRecord::Schema.define(version: 2019_03_11_225900) do
     t.index ["drink_id"], name: "index_ingredients_on_drink_id"
   end
 
+  create_table "players", force: :cascade do |t|
+    t.string "first_name"
+    t.string "last_name"
+    t.string "dob"
+    t.boolean "read_legal"
+    t.integer "current_position"
+    t.integer "current_division"
+    t.string "phone_no"
+    t.string "address"
+    t.string "email"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "full_name"
+  end
+
   create_table "quotes", force: :cascade do |t|
     t.string "content"
     t.string "author"
+  end
+
+  create_table "teams", force: :cascade do |t|
+    t.string "team_name"
+    t.integer "team_division"
+    t.integer "player_id_1"
+    t.integer "player_id_2"
+    t.integer "player_id_3"
+    t.integer "player_id_4"
+    t.integer "player_id_5"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
   end
 
   create_table "users", force: :cascade do |t|
