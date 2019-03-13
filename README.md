@@ -17,7 +17,7 @@ This project is meant to be a replacement web application for [www.portlandsquas
 * React/Redux
 * Firebase
 * Material-UI
-
+* react-firebase-authentication, license purchased from [Robin Wieruch](https://github.com/the-road-to-react-with-firebase/react-firebase-authentication). 
 
 ### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 * Substitute request system (if you can't make a match)
