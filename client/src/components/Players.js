@@ -15,7 +15,13 @@ class Players extends Component {
     };
   }
 
+
   componentDidMount() {
+    this.props.firebase.users().on('value', snapshot => {
+      this.setState({
+        users: snapshot.val(),
+      });
+    });
     fetch('http://localhost:3001/api/players')
       .then(response => response.json())
       .then(players => this.setState({ players }));
