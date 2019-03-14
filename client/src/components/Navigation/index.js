@@ -17,52 +17,59 @@ const Navigation = () => (
   </AuthUserContext.Consumer>
 );
 
+const navStyles = {
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, 300px)',
+  justifyContent: 'center',
+}
+
+const navDivStyles = {
+  margin: '10px',
+  padding: '10px',
+  borderStyle: 'dashed',
+}
 
 const NavigationAuth = ({ authUser }) => (
 
-  <ul style={{
-      borderStyle: 'solid'
-      }}>
-    <li>
+<div style={navStyles}>
+    <div style={navDivStyles}>
       <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
+    </div>
+    <div style={navDivStyles}>
       <Link to={ROUTES.SMIGEL}>Smigel</Link>
-    </li>
-    <li>
+    </div>
+    <div style={navDivStyles}>
       <Link to={ROUTES.PLAYERS}>Players</Link>
-    </li>
-    <li>
+    </div>
+    <div style={navDivStyles}>
       <Link to={ROUTES.TEAMS}>Teams</Link>
-    </li>
-    <li>
+    </div>
+    <div style={navDivStyles}>
       <Link to={ROUTES.HOME}>Home</Link>
-    </li>
-    <li>
+    </div>
+    <div style={navDivStyles}>
       <Link to={ROUTES.ACCOUNT}>Account</Link>
-    </li>
+    </div>
     {authUser.roles.includes(ROLES.ADMIN) && (
-      <li>
+      <div style={navDivStyles}>
         <Link to={ROUTES.ADMIN}>Admin</Link>
-      </li>
+      </div>
     )}
-    <li>
+    <div style={navDivStyles}>
       <SignOutButton />
-    </li>
-  </ul>
+    </div>
+</div>
 );
 
 const NavigationNonAuth = () => (
-  <ul style={{
-      borderStyle: 'solid'
-      }}>
-    <li>
+<div style={navStyles}>
+    <div style={navDivStyles}>
       <Link to={ROUTES.LANDING}>Landing</Link>
-    </li>
-    <li>
+    </div>
+    <div style={navDivStyles}>
       <Link to={ROUTES.SIGN_IN}>Sign In</Link>
-    </li>
-  </ul>
+    </div>
+</div>
 );
 
 export default Navigation;
