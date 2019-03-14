@@ -7,6 +7,12 @@ def index
   render json: @players.to_json
 end
 
+# GET / players by id
+def show
+  @players = Player.find(params[:id])
+  render json: @players.to_json
+end
+
 
 
 

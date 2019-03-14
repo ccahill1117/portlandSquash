@@ -9,7 +9,8 @@ ActiveAdmin.register Player do
     :phone_no,
     :address,
     :email,
-    :team_id
+    :team_id,
+    :uid
     ]
     permitted
   end

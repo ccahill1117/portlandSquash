@@ -7,6 +7,7 @@ ActiveAdmin.register RosterSpot do
       :team_id,
       :created_at,
       :updated_at,
+      
     ]
     permitted
   end
