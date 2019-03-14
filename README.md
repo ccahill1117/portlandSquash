@@ -16,8 +16,9 @@ This project is meant to be a replacement web application for [www.portlandsquas
 ### What tools, frameworks, libraries, APIs, modules and/or other resources (whatever is specific to your track, and your language) will you use to create this MVP? List them all here. Be specific.
 * React/Redux
 * Firebase
-* Material-UI
-* react-firebase-authentication, license purchased from [Robin Wieruch](https://github.com/the-road-to-react-with-firebase/react-firebase-authentication). 
+* Material-UI (typography)
+* react-firebase-authentication, license purchased from [Robin Wieruch](https://github.com/the-road-to-react-with-firebase/react-firebase-authentication).
+* ActiveAdmin (ruby gem, not purchased) 
 
 ### If you finish developing the minimum viable product (MVP) with time to spare, what will you work on next? Describe these features here: Be specific.
 * Substitute request system (if you can't make a match)
