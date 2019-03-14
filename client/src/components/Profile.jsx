@@ -11,7 +11,7 @@ function Profile(props) {
     return (
       <div>
         <Typography component="h3" variant="h4" gutterBottom>
-          {props.name}
+          {props.name}, {props.player1}
         </Typography>
       </div>
     );
@@ -20,6 +20,7 @@ function Profile(props) {
 
 Profile.propTypes = {
   name: PropTypes.string,
+  player1: PropTypes.string,
 };
 
 export default Profile;
