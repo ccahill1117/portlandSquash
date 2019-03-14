@@ -1,6 +1,5 @@
 import React from 'react';
 import { BrowserRouter as Router, Route } from 'react-router-dom';
-
 import Navigation from '../Navigation';
 import LandingPage from '../Landing';
 import SignUpPage from '../SignUp';
@@ -12,6 +11,7 @@ import AdminPage from '../Admin';
 import Smigel from '../SmigelYusem';
 import Players from '../Players';
 import Teams from '../Teams';
+import Profile from '../Profile';
 
 import * as ROUTES from '../../constants/routes';
 import { withAuthentication } from '../Session';
