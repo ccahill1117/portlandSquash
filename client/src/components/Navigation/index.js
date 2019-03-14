@@ -17,8 +17,12 @@ const Navigation = () => (
   </AuthUserContext.Consumer>
 );
 
+
 const NavigationAuth = ({ authUser }) => (
-  <ul>
+
+  <ul style={{
+      borderStyle: 'solid'
+      }}>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
     </li>
@@ -49,7 +53,9 @@ const NavigationAuth = ({ authUser }) => (
 );
 
 const NavigationNonAuth = () => (
-  <ul>
+  <ul style={{
+      borderStyle: 'solid'
+      }}>
     <li>
       <Link to={ROUTES.LANDING}>Landing</Link>
     </li>
