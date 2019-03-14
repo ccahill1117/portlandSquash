@@ -31,6 +31,7 @@ class Teams extends Component {
           .then(response => response.json())
           .then(players => this.setState({ players }))
       )
+      
   }
 
   componentWillUnmount() {
@@ -47,7 +48,7 @@ class Teams extends Component {
                 name={team.name}
                 key={i}
                 />
-          })        
+          })
         }
 
       </div>
