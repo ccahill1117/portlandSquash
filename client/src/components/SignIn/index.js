@@ -7,15 +7,23 @@ import { PasswordForgetLink } from '../PasswordForget';
 import { withFirebase } from '../Firebase';
 import * as ROUTES from '../../constants/routes';
 
+const signInStyles = {
+  borderStyle: 'solid',
+  display: 'grid',
+  gridTemplateColumns: 'repeat(auto-fit, 300px)',
+  justifyContent: 'center',
+
+}
+
 const SignInPage = () => (
-  <div>
-    <h1>SignIn</h1>
-    <SignInForm />
-    <SignInGoogle />
-    <SignInFacebook />
-    <SignInTwitter />
-    <PasswordForgetLink />
-    <SignUpLink />
+  <div style={signInStyles}>
+    <div>
+      <h1>SignIn</h1>
+      <SignInForm />
+
+      <PasswordForgetLink />
+      <SignUpLink />
+    </div>
   </div>
 );
 

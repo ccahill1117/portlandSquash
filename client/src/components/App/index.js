@@ -19,7 +19,14 @@ import { withAuthentication } from '../Session';
 const App = () => (
   <Router>
     <div>
-      <Navigation />
+      <div style={{
+          textAlign: 'center',
+
+        }}>
+      <img src="http://portlandsquash.org/graphics/logo_racquet_shadow.png"></img>
+      </div>
+      <hr />
+    <Navigation />
 
       <hr />
 
